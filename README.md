@@ -46,23 +46,16 @@
 
 ## :dart: About ##
 
-Describe your project
-
-## :sparkles: Features ##
-
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+with this Chrome extension, you can change the playback speed of any video on your browser.
 
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
 
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
+
+- [TailwindCss](https://tailwindcss.com/)
 - [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [JavaScript](https://www.javascript.com/)
 
 ## :white_check_mark: Requirements ##
 
