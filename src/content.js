@@ -7,4 +7,11 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 	  }
 	}
   });
+  chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+	if (request.action === 'checkVideoPresence') {
+	  const videoPresent = document.querySelector('video') !== null;
+	  sendResponse({ hasVideo: videoPresent });
+	}
+  });
+  
   
