@@ -70,7 +70,7 @@ function App() {
           </div>
         )}
         <div className="flex justify-center items-center text-md text-[#183A37] mt-6">
-          <a href="https://mobinshahidi.netlify.app">mobin shahidi</a>
+          <a href="https://mobinshahidi.netlify.app" target="blank">mobin shahidi</a>
         </div>
       </div>
     </>
