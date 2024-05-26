@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Video Speed Control",
+    "name": "Rushify",
     "version": "1.0.1",
     "action": {
         "default_popup": "index.html"
