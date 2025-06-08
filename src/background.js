@@ -1,17 +1,5 @@
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    if (request.action === 'checkVideoPresence') {
-      chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-        const activeTab = tabs[0];
-        if (activeTab) {
-          const activeTabId = activeTab.id;
-          chrome.tabs.sendMessage(activeTabId, { action: 'changePlaybackSpeed', speed: request.speed }, (response) => {
-            if (chrome.runtime.lastError) {
-              console.error('Error: ', chrome.runtime.lastError);
-            }
-          });
-        } else {
-          console.error('Error: No active tab found.');
-        }
-      });
-    }
-  });
+// No background tasks are currently required for this extension.
+// This file is intentionally kept minimal.
+// Previous message listener was removed as it was redundant and potentially problematic.
+// Functionality for video detection and playback speed control is handled
+// directly between the popup (App.jsx) and the content script (content.js).
