@@ -8,7 +8,7 @@
   },
   "permissions": ["activeTab", "tabs", "scripting"],
   "background": {
-    "service_worker": "background.js"
+    "scripts": ["background.js"]
   },
   "icons": {
     "16": "icon.png",
@@ -24,5 +24,10 @@
   ],
   "description": "video playback speed control",
   "author": "mowbinsh@gmail.com",
-  "short_name": "playback speed"
+  "short_name": "playback speed",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "rushify@example.com"
+    }
+  }
 }
