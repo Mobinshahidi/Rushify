@@ -5,9 +5,9 @@ function App() {
   const [hasVideo, setHasVideo] = useState(false);
 
   useEffect(() => {
-    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    browser.tabs.query({ active: true, currentWindow: true }, (tabs) => {
       const activeTabId = tabs[0].id;
-      chrome.tabs.sendMessage(
+      browser.tabs.sendMessage(
         activeTabId,
         { action: "checkVideoPresence" },
         (response) => {
@@ -19,9 +19,9 @@ function App() {
 
   const speedHandler = () => {
     try {
-      chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+      browser.tabs.query({ active: true, currentWindow: true }, (tabs) => {
         const activeTabId = tabs[0].id;
-        chrome.tabs.sendMessage(activeTabId, {
+        browser.tabs.sendMessage(activeTabId, {
           action: "changePlaybackSpeed",
           speed,
         });

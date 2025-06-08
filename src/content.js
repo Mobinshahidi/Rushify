@@ -39,7 +39,7 @@ function setPlaybackSpeed(videoElement, speed) {
   }
 }
 
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === 'changePlaybackSpeed') {
     const videoElement = findVideoElement();
     if (videoElement) {
@@ -48,7 +48,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   }
 });
 
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === 'checkVideoPresence') {
     const videoElement = findVideoElement();
     sendResponse({ hasVideo: videoElement !== null });
